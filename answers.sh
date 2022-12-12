@@ -51,5 +51,15 @@ DELETE FROM graduates WHERE Name="Layal";
 16-SELECT companies.Name FROM companies JOIN employees ON companies.name = employees.Company WHERE employees.Role = "Graphic Designer";
 
 
+### Count & Filter
+
+SELECT name,Max(points) FROM students ;
+SELECT Avg(points) FROM students ;
+SELECT COUNT(points) FROM students WHERE points=500;
+SELECT name FROM students WHERE students.name LIKE "%s%";
+SELECT * FROM students ORDER BY students.Points DESC;
+
+
+
 
 
