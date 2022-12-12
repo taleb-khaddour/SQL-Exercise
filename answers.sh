@@ -14,3 +14,35 @@ WHERE Name= "Basma";
 SET Points=150
 WHERE Name= "Alex";
 
+
+
+###Creating Table
+
+
+
+CREATE TABLE "graduates" (
+	"ID"	INTEGER NOT NULL,
+	"Name"	TEXT NOT NULL UNIQUE,
+	"Age"	INTEGER,
+	"Gender"	TEXT,
+	"Points"	INTEGER,
+	"Graduation"	TEXT,
+	PRIMARY KEY("ID" AUTOINCREMENT)
+);
+
+
+
+
+INSERT INTO  graduates VALUES(1,"Layal",18,"F",350," ");
+
+UPDATE graduates
+SET Graduation ="12/12/2022"
+WHERE Name="Layal";
+
+DELETE FROM graduates WHERE Name="Layal";
+
+
+
+
+
+
