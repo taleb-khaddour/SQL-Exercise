@@ -37,3 +37,14 @@ SET Graduation ="12/12/2022"
 WHERE Name="Layal";
 
 DELETE FROM graduates WHERE Name="Layal";
+
+
+
+
+Joins
+
+14-SELECT employees.Name, employees.Company, companies.Date FROM employees JOIN companies ON employees.Company = companies.name;
+15-SELECT employees.NameFROM employees JOIN companies ON employees.Company = companies.name WHERE date<2000;
+16-SELECT companies.Name FROM companies JOIN employees ON companies.name = employees.Company WHERE employees.Role = "Graphic Designer";
+
+
